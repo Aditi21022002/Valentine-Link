@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Forever Valentine 💘</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffd6e8; /* baby pink */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      max-width: 400px;
+    }
+
+    h1 {
+      color: #e75480;
+    }
+
+    button {
+      padding: 12px 25px;
+      margin: 15px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .yes {
+      background-color: #ff4d88;
+      color: white;
+    }
+
+    .no {
+      background-color: #ccc;
+      color: black;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .message {
+      margin-top: 15px;
+      color: #444;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FIRST PAGE -->
+  <div class="container" id="questionPage">
+    <h1>Will you be my forever valentine? 💕</h1>
+    <button class="yes" onclick="showYes()">Yes 💘</button>
+    <button class="no" onclick="showNo()">No 🙄</button>
+  </div>
+
+  <!-- YES PAGE -->
+  <div class="container hidden" id="yesPage">
+    <!-- Replace photo.jpg with your image file name -->
+    <img src="photo.jpg" alt="My Valentine">
+
+    <h2>Happy Valentine’s Day my love, my life, my heart, my forever valentine 😘❤️💘</h2>
+
+    <p class="message">
+      We’ve had our ups and downs, and even though the road isn’t always smooth,
+      it always leads us home, back to each other.
+      <br><br>
+      You are the butter to my bread and the breath to my life.
+      you are my everything Mr Thorat.
+    </p>
+  </div>
+
+  <script>
+    function showNo() {
+      alert("Are you sure?");
+      alert("Are you serious?");
+      alert("You don't have any option without me 😌❤️");
+    }
+
+    function showYes() {
+      document.getElementById("questionPage").classList.add("hidden");
+      document.getElementById("yesPage").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
